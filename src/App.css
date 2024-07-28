@@ -62,3 +62,57 @@
   margin-top: 10px;
   font-size: 18px;
 }
+.label{
+  color: rgb(67, 243, 3);
+  font-size: 20px;
+}
+.div-10{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.div-10 img{
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+}
+.div-11{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div-11 img{
+  width: 300px;
+  height: 300px;
+  border-radius: 250px;
+}
+
+.div-13{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.div-12 div .p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.div-12 div .p2{
+font-size: 20px;
+}
+/* textarea{
+  border: 1px double;
+  width:474px;
+  height: 300px;
+} */
+/* .div-14{
+  width: 100%;
+}
+.div-14 div{
+  width: 100%;
+} */

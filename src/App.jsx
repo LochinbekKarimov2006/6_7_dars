@@ -6,6 +6,7 @@ import Abaut from './pages/Abaut'
 import Contact from './pages/Contact'
 import ToliqMalumod from './pages/ToliqMalumod'
 import Mesj from './pages/Mesj'
+import Account from './pages/Account'
 function App() {
 let router =createBrowserRouter([
   {
@@ -31,6 +32,10 @@ let router =createBrowserRouter([
       {
       path:"/mesj",
       element:<Mesj/>
+      },
+      {
+        path:"/account",
+        element:<Account/>
       }
     ]
   }
