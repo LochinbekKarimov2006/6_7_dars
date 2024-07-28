@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Card() {
@@ -7,7 +7,7 @@ function Card() {
     const [filteredUsers, setFilteredUsers] = useState([]);
     const [limit, setLimit] = useState(15);
     const [hasMore, setHasMore] = useState(true);
-
+    
     useEffect(() => {
         fetch(`https://cars-pagination.onrender.com/products/${filter}`)
             .then(response => response.json())

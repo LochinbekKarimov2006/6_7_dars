@@ -5,6 +5,7 @@ import Hoome from './pages/Hoome'
 import Abaut from './pages/Abaut'
 import Contact from './pages/Contact'
 import ToliqMalumod from './pages/ToliqMalumod'
+import Mesj from './pages/Mesj'
 function App() {
 let router =createBrowserRouter([
   {
@@ -26,6 +27,10 @@ let router =createBrowserRouter([
       {
         path:"/toliq/:id",
         element:<ToliqMalumod/>
+      },
+      {
+      path:"/mesj",
+      element:<Mesj/>
       }
     ]
   }

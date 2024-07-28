@@ -1,41 +1,47 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { GlobalContext } from '../context/GlobalContext';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    date: '',
-    time: '',
-    area: '',
-    city: '',
-    state: '',
-    postCode: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+    let {state,setState}=useContext(GlobalContext)
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        date: '',
+        time: '',
+        area: '',
+        city: '',
+        state: '',
+        postCode: '',
     });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form Data:', formData);
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      date: '',
-      time: '',
-      area: '',
-      city: '',
-      state: '',
-      postCode: '',
-    });
-    localStorage.setItem("data",JSON.stringify(formData))
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form Data:', formData);
+        setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            date: '',
+            time: '',
+            area: '',
+            city: '',
+            state: '',
+            postCode: '',
+        });
+        localStorage.setItem("data",JSON.stringify(formData))
+        setState({
+            ...state,
+            theme: true // "thema" o'rniga "theme"
+        });
   };
 
   return (
