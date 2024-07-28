@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-let [malumod,setMalumod]=useState(false)
+// let [malumod,setMalumod]=useState(false)
 function Mesj() {
   return (
     <div>
